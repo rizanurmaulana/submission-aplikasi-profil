@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: #76ABAE;
+  --light-color: #EEEEEE;
+  --dark-grey-color: #31363F;
+  --dark-color: #222831;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--primary-color);
+}
+
+header .header__title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-color);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: var(--dark-grey-color);
+}
+
+.profile .profile__image {
+  border-radius: 500px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+.profile .profile__name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.profile .profile__position {
+  color: var(--light-color);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+
+.about .about__container {
+  display: flex;
+  gap: 20px;
+  max-width: 70%;
+}
+
+.about .about__story {
+  width: 70%;
+}
+
+.about .about__story .about__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.about .about__story .about__text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.about .about__contact {
+  width: 30%;
+}
+
+.about .about__contact .about__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.about .about__contact p {
+  color: var(--dark-color);
+}
+
+.about .about__contact .contact__info {
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+
+.social .social__list {
+  display: flex;
+  gap: 50px;
+}
+
+.social .social__item {
+  list-style: none;
+  font-size: 2.5rem;
+}
+
+.social .social__item .social__link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.social .social__item .social__link:hover {
+  color: var(--primary-color);
+  transition: ease-in .3s;
+}
+
+.social .social__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+@media (max-width: 762px) {
+  .about .about__container {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .about .about__story {
+    width: 100%;
+  }
+
+  .about .about__contact {
+    width: 100%;
+  }
+}
